@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- In this version we introduce buttons that access the DOM elements and do things via addEventListener methods -->
+    <meta charset="UTF-8" />
+    <title>Version 8 of Todo List app -- Getting data from inputs</title>
+</head>
+
+<body>
+    <h1>Todo List</h1>
+    <!-- add, delete, change, toggleCompleted-->
+    <div>
+        <button onclick="handlers.displayTodos()">Display Todos</button>
+        <button onclick="handlers.toggleAll()">Toggle All</button>
+    </div>
+
+    <div>
+        <button onclick="handlers.addTodo()">Add</button>
+        <input id="addTodoTextInput" type="text"></input>
+    </div>
+
+    <div>
+        <button onclick="handlers.changeTodo()">Change To Do</button>
+        <input id="changeTodoPositionInput" type="number"></input>
+        <input id="changeTodoTextInput" type="text"></input>
+    </div>
+
+    <div>
+        <button onclick="handlers.deleteTodo()">Delete</button>
+        <input id="deleteTodoPositionInput" type="number"></input>
+    </div>
+
+    <div>
+        <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
+        <input id="toggleCompletedPositionInput" type="number"></input>
+    </div>
+
+    <script src="script8.js"></script>
+</body>
+
+</html>
